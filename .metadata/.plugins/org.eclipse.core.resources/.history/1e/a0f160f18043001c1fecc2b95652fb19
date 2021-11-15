@@ -1,0 +1,13 @@
+package com.kh;
+
+public class Array3 {
+
+	public static void main(String[] args) {
+		
+		int[][] shape = new int[3][3];
+		
+		
+
+	}
+
+}

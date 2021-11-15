@@ -1,0 +1,54 @@
+package com.kh;
+
+import java.util.Scanner;
+
+public class Scores {
+
+	public static void main(String[] args) {
+		
+		boolean stop = false;
+
+		Scanner scanner = new Scanner(System.in);
+		
+		do {
+		
+			printLine(80);
+			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+			printLine(80);
+			System.out.print("선택 >> "); 
+			//String choiceNumber = scanner.nextLine();
+			
+			switch(scanner.nextLine()) {
+			case "1":
+				int[] student;
+				System.out.print("학생수 > ");
+				int studentCount = Integer.parseInt(scanner.nextLine());
+				student = new int[studentCount];
+				
+				break;
+			case "2":
+			case "3":
+			case "4":
+			case "5":
+				stop = true;
+				break;
+			default : 
+					continue;
+			}
+			
+			
+		}while(!stop);
+		
+		System.out.println("프로그램 종료!!");
+		
+	}
+	
+	//라인 출력
+	public static void printLine(int count) {
+		for(int i=1; i<=count ;i++) {
+			System.out.print("-");
+		}
+		System.out.println();
+	}
+
+}

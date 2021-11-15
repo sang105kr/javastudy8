@@ -1,0 +1,10 @@
+package com.kh;
+
+public class Array4 {
+
+	public static void main(String[] args) {
+		String[][] names = new String[2][3];
+
+	}
+
+}

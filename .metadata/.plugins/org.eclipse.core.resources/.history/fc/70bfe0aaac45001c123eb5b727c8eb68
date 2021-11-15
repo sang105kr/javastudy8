@@ -1,0 +1,13 @@
+
+public class Array1 {
+
+	public static void main(String[] args) {
+		
+		int[] array;   			// 정수형 1차원 배열 선언
+		array = new int[3]; // 배열 생성
+		
+		array = new int[4];
+
+	}
+
+}

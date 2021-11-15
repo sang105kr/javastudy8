@@ -1,0 +1,20 @@
+package com.kh;
+
+import java.util.Scanner;
+
+public class PersonMain {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		Person person = new Person();
+		person.eat();
+		person.smile();
+		
+		person.name = "ȫ�浿";
+		person.age = 30;
+
+	}
+
+}

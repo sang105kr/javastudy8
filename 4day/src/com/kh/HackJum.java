@@ -1,0 +1,36 @@
+package com.kh;
+/*
+ * ±¹,¿µ,¼ö ÃÑÁ¡,Æò±Õ ±¸ÇÏ±â (¹è¿­»ç¿ëÇÏ±â)
+ */
+public class HackJum {
+
+	public static void main(String[] args) {
+		
+		int sum = 0; 								//ÃÑÁ¡
+		double avg = 0.0;						//Æò±Õ
+		int[] subject = new int[3]; //¹è¿­»ý¼º
+		
+		subject[0] = 90;
+		subject[1] = 70;
+		subject[2] = 80;
+		
+		//subject[3] = 50;
+		
+		System.out.println(subject[2]);
+		System.out.println(subject.length);
+		
+		//System.out.println(subject[3]);
+		
+		//int sum = subject[0] + subject[1] + subject[2];
+		
+		for(int i=0; i<subject.length; i++) {
+			sum += subject[i];
+		}
+		
+		avg = (double)sum / subject.length;
+		
+		System.out.println("ÃÑÁ¡=" + sum);
+		System.out.println("Æò±Õ=" + avg);
+	}
+
+}

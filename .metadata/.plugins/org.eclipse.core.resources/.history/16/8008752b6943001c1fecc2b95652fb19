@@ -1,0 +1,14 @@
+package com.kh;
+
+public class Person {
+	String name;
+	String age;
+	
+	public void smile() {
+		System.out.println("¿ô´Ù");
+	}
+	
+	public void eat() {
+		System.out.println("¸Ô´Ù");
+	}
+}

@@ -1,0 +1,16 @@
+package com.kh;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		
+		double[] lotto = new double[45];
+		
+		
+		for(int i=0; i<lotto.length; i++) {
+			System.out.println(lotto[i]);
+		}
+
+	}
+
+}

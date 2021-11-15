@@ -1,0 +1,14 @@
+package com.kh;
+
+public class Scores {
+
+	public static void main(String[] args) {
+		
+		boolean stop = false;
+		
+		do {
+			
+		}while(!stop);
+	}
+
+}
