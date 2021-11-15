@@ -1,0 +1,15 @@
+package com.kh;
+
+public class EnumExam {
+
+	public static void main(String[] args) {
+
+		String gender = "³²";
+		
+		
+		Gender gender1 = Gender.Male;
+		Gender gender2 = Gender.FeMale;
+
+	}
+
+}

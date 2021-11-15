@@ -1,0 +1,19 @@
+package com.kh;
+
+public class PersonMain {
+
+	public static void main(String[] args) {
+		
+		Person p1 = new Person();
+		Person p2 = new Person();
+		
+		Person[] p3 = new Person[3];
+
+		Person p4 = new Person("È«±æµ¿",30,Gender.Male);
+		Person p4 = new Person("È«±æ¼ø",20,Gender.FeMale);
+		
+		
+		
+	}
+
+}

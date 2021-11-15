@@ -1,0 +1,25 @@
+package com.kh;
+
+public class Person {
+
+	private String name;
+	private int age;	
+	private Gender gender;
+	
+	
+	//»ı¼ºÀÚ
+	public Person(String name, int age, Gender gender) {
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+	}
+	
+	public void smile() {
+		System.out.println("¿ô´Ù");
+	}
+	
+	public void eat() {
+		System.out.println("¸Ô´Ù");
+	}
+	
+}

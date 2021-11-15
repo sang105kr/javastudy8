@@ -9,7 +9,7 @@ public class TheaterReservation {
 
 	public static void main(String[] args) {
 		
-		int row = 6;
+		int row = 10;
 		int col = 10;
 		String[][] seats = new String[row][col];
 		
