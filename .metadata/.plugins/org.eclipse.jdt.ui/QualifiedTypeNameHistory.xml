@@ -3,4 +3,8 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.kh.Calculator"/>
+    <fullyQualifiedTypeName name="com.kh.Person"/>
+    <fullyQualifiedTypeName name="solution6.Member"/>
+    <fullyQualifiedTypeName name="solution6.Board"/>
+    <fullyQualifiedTypeName name="solution6.MemberService"/>
 </qualifiedTypeNameHistroy>

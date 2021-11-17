@@ -13,7 +13,7 @@ public class MemberServiceExample {
 		String id = null;
 		String pw = null;
 		boolean loginOk = false;
-		int result = 0;
+		LoginChk result = null;
 		
 		while(!stop) {
 			System.out.println("1.로그인 2.로그아웃 3.종료");
@@ -35,13 +35,13 @@ public class MemberServiceExample {
 				
 				result = memberService.login(id, pw);				
 				
-				if(result == 1) { //성공
+				if(result == LoginChk.OK) { //성공
 					loginOk = true;
 					System.out.println("로그인 되었습니다.");
-				}else if(result == 0){//실패
+				}else if(result == LoginChk.NOK){//실패
 					loginOk = false;
 					System.out.println("id 또는 password가 올바르지 않습니다");
-				}else if(result == -1) {//3번실패
+				}else if(result == LoginChk.FAIL) {//3번실패
 					loginOk = false;	
 					stop = true;
 					System.out.println("로그인 3번 실패했습니다!");
