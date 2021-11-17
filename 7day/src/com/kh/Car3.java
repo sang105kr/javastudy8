@@ -9,7 +9,7 @@ public class Car3 {
 	
 	public Car3() throws Exception {
 		//super();
-		count2++;
+		this.count2++;
 		
 		
 		if(++count == 3) {
