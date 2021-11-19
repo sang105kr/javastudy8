@@ -1,5 +1,7 @@
 package com.kh;
 
+import java.util.Calendar;
+
 public class PersonMain {
 
 	public static void main(String[] args) {
@@ -11,6 +13,8 @@ public class PersonMain {
 		Person.cal.println("hello!");
 		
 		Math.random();
+		
+		Calendar.getInstance();
 
 	}
 
