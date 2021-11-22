@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=8day/src&lt;Inheritance{Person.java[Person" modifiers="1" timestamp="1637218968198"/>
-    <typeInfo handle="=8day/src&lt;solution7.problem5{Parent.java[Parent" modifiers="1" timestamp="1637220288915"/>
+    <typeInfo handle="=8day/src&lt;solution7.problem5{Parent.java[Parent" modifiers="1" timestamp="1637223843904"/>
+    <typeInfo handle="=9day/src&lt;com.kh{Phone.java[Phone" modifiers="1" timestamp="1637284375335"/>
+    <typeInfo handle="=9day/src&lt;com.kh.exam{Phone.java[Phone" modifiers="1" timestamp="1637293273988"/>
+    <typeInfo handle="=9day/src&lt;com.kh.exam2{Phone.java[Phone" modifiers="1" timestamp="1637298702289"/>
+    <typeInfo handle="=9day/src&lt;solution7{Service.java[Service" modifiers="1" timestamp="1637302354073"/>
+    <typeInfo handle="=9day/src&lt;com.kh.abs{Phone.java[Phone" modifiers="1025" timestamp="1637306501850"/>
+    <typeInfo handle="=9day/src&lt;solution7.problem3{HttpServlet.java[HttpServlet" modifiers="1025" timestamp="1637309482761"/>
+    <typeInfo handle="=9day/src&lt;solution7.problem4{HttpServlet.java[HttpServlet" modifiers="1025" timestamp="1637310192853"/>
 </typeInfoHistroy>

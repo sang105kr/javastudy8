@@ -12,4 +12,12 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="com.kh.Person2"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.kh.SamsungPhone"/>
+    <fullyQualifiedTypeName name="com.kh.exam2.LgPhone"/>
+    <fullyQualifiedTypeName name="com.kh.exam2.SamsungPhone"/>
+    <fullyQualifiedTypeName name="solution7.Controller"/>
+    <fullyQualifiedTypeName name="solution7.MemberService"/>
+    <fullyQualifiedTypeName name="solution7.Aservice"/>
+    <fullyQualifiedTypeName name="solution7.problem3.LoginServlet"/>
+    <fullyQualifiedTypeName name="solution7.problem3.FileDownloadServlet"/>
 </qualifiedTypeNameHistroy>
