@@ -20,4 +20,17 @@
     <fullyQualifiedTypeName name="solution7.Aservice"/>
     <fullyQualifiedTypeName name="solution7.problem3.LoginServlet"/>
     <fullyQualifiedTypeName name="solution7.problem3.FileDownloadServlet"/>
+    <fullyQualifiedTypeName name="com.kh.exam1.RemoteControll"/>
+    <fullyQualifiedTypeName name="com.kh.exam1.Television"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.kh.exam1.Audio"/>
+    <fullyQualifiedTypeName name="com.kh.exam2.InterfaceC"/>
+    <fullyQualifiedTypeName name="com.kh.exam2.ImplementationC"/>
+    <fullyQualifiedTypeName name="com.kh.exam3.VendingMachine"/>
+    <fullyQualifiedTypeName name="com.kh.exam4.VendingMachine"/>
+    <fullyQualifiedTypeName name="com.kh.exam6.InterfaceA"/>
+    <fullyQualifiedTypeName name="solution8.OracleDao"/>
+    <fullyQualifiedTypeName name="solution8.MysqlDao"/>
+    <fullyQualifiedTypeName name="com.kh.exam7.Student"/>
+    <fullyQualifiedTypeName name="com.kh.exam8.RemoteControll"/>
 </qualifiedTypeNameHistroy>
