@@ -33,4 +33,14 @@
     <fullyQualifiedTypeName name="solution8.MysqlDao"/>
     <fullyQualifiedTypeName name="com.kh.exam7.Student"/>
     <fullyQualifiedTypeName name="com.kh.exam8.RemoteControll"/>
+    <fullyQualifiedTypeName name="com.kh.exam2.RemoteControll"/>
+    <fullyQualifiedTypeName name="sec02.verify.exam01.Anonymous"/>
+    <fullyQualifiedTypeName name="sec02.verify.exam01.Worker"/>
+    <fullyQualifiedTypeName name="sec02.verify.exam02.Anonymous"/>
+    <fullyQualifiedTypeName name="sec02.verify.exam02.Vehicle"/>
+    <fullyQualifiedTypeName name="sec02.verify.exam03.CheckBox"/>
+    <fullyQualifiedTypeName name="sec02.verify.exam03.CheckBox.OnSelectListener"/>
+    <fullyQualifiedTypeName name="com.kh.exam3.ExceptionExample"/>
+    <fullyQualifiedTypeName name="com.kh.exam6.OverAgeException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 </qualifiedTypeNameHistroy>

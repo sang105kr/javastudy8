@@ -1,5 +1,9 @@
 package com.kh.exam9;
-
+/**
+ * Å×½ºÆ®
+ * @author mypc
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
