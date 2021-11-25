@@ -14,7 +14,7 @@ public class Person {
 
 	public String getName() {
 		return name;
-	}
+	} 
 
 	public void setName(String name) {
 		this.name = name;
@@ -40,11 +40,11 @@ public class Person {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj)  //동일객체면 true
 			return true;
-		if (obj == null)
+		if (obj == null)  //null 비교는 false
 			return false;
-		if (getClass() != obj.getClass())
+		if (getClass() != obj.getClass()) //타입이 다르면 false
 			return false;
 		Person other = (Person) obj;
 		return age == other.age && Objects.equals(name, other.name);

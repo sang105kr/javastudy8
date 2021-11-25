@@ -2,12 +2,13 @@ package com.kh.exam9;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		List list = new ArrayList();
+		List<Person> list = new ArrayList<Person>();
 		
 		//°´Ã¼ Ãß°¡
 		list.add(new Person("È«±æµ¿",30));		//Ãß°¡
@@ -26,7 +27,19 @@ public class Main {
 		System.out.printf("ÀÌ¸§ : %s, ³ªÀÌ : %d\n",person.getName(),person.getAge());
 		System.out.println(list.isEmpty());
 		System.out.println(list.size());
-
+		
+		//°´Ã¼ »èÁ¦
+		Person removedPerson = list.remove(1);
+		System.out.println(list.toString());
+		System.out.println(list.size());
+		
+		System.out.println(list.remove(new Person("È«±æµ¿",30)));
+		System.out.println(list.toString());
+		System.out.println(list.size());
+		
+		list.clear();
+		System.out.println(list.toString());
+		System.out.println(list.size());
 
 	}
 }

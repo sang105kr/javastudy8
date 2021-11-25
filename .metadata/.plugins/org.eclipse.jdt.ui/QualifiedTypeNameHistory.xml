@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.kh.Person"/>
     <fullyQualifiedTypeName name="solution6.Member"/>
     <fullyQualifiedTypeName name="solution6.Board"/>
@@ -43,4 +42,7 @@
     <fullyQualifiedTypeName name="com.kh.exam3.ExceptionExample"/>
     <fullyQualifiedTypeName name="com.kh.exam6.OverAgeException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
