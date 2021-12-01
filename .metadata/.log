@@ -2939,3 +2939,230 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-30 17:31:58.854
 !MESSAGE executing callback sts4.classpath.QhCEEqmt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-30 17:39:33.442
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QhCEEqmt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-30 17:39:33.443
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QhCEEqmt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-30 17:39:33.443
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-11-30 17:39:33.444
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QhCEEqmt => OK
+!SESSION 2021-12-01 16:42:02.346 -----------------------------------------------
+eclipse.buildId=4.12.1.202110260750
+java.version=17
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-12-01 16:42:31.926
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-12-01 16:42:31.926
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7646c9f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b54a0a4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:41.028
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:41.029
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@37272d47[org.springframework.tooling.boot.ls:1.29.0.202110250907(id=556)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:41.041
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:42.300
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-12-01 16:42:43.701
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\mypc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:58.915
+!MESSAGE Boot LS startup time from start to initialized: 17852ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.912
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.sgjpSyipisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.915
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.918
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.919
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.919
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.920
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.sgjpSyip => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.923
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.924
+!MESSAGE buffering callback sts4.classpath.sgjpSyip words false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.924
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.925
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.926
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 10day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.927
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.928
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.928
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 11day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.929
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.930
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.931
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 12day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.931
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.932
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.933
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 13day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.934
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.935
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.936
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 14day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.936
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.937
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.938
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 2day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.939
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.940
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.940
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 3day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.941
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.942
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.942
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 4day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.943
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.944
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.945
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 5day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.945
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.946
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.947
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 6day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.948
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.949
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.949
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 7day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.950
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.951
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.951
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 8day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.952
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.953
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.953
+!MESSAGE buffering callback sts4.classpath.sgjpSyip 9day false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.954
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.955
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.956
+!MESSAGE buffering callback sts4.classpath.sgjpSyip first false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.956
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.957
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.958
+!MESSAGE buffering callback sts4.classpath.sgjpSyip hello false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:42:59.959
+!MESSAGE executing callback sts4.classpath.sgjpSyip 16 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-01 16:43:00.522
+!MESSAGE executing callback sts4.classpath.sgjpSyip SUCCESS [done]

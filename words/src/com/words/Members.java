@@ -27,16 +27,48 @@ public class Members {
 		map.put(id, pw);
 	}
 	
-	//회원 인증
-	public boolean isMember(String id, String pw) {
-		boolean isMember = false;
-		if(map.get(id).equals(pw)) {
-			isMember = true;
+	/**
+	 * 회원 인증
+	 * @param id 아이디
+	 * @param pw 비밀번호
+	 * @return 회원인증(인증실패,관리자,일반회원)
+	 */
+	public LoginChk isMember(String id, String pw) {
+		LoginChk loginChk = null;
+		
+		//찾고자 하는 아이디가 없는경우
+		if(map.get(id) == null) {
+			loginChk = LoginChk.FAIL;
+			return LoginChk.FAIL;
 		}
-		return isMember;
+		
+		//관리자
+		if(id.equals(ADMIN_ID) && pw.equals(ADMIN_PW)) {
+			loginChk = LoginChk.ADMIN;
+			
+		//일반회원
+		}else if(map.get(id).equals(pw)) {
+			loginChk = LoginChk.MEMBER;
+		}
+		
+		return loginChk;
 	}
 		
-	//회원 탈퇴
+	/**
+	 * 회원 탈퇴
+	 * @param id 아이디
+	 * @param pw 비밀번호
+	 * @return 탈퇴성공유무
+	 */
+	public boolean outMember(String id, String pw) {
+		boolean result = false;
+		//회원존재하면
+		if(map.get(id).equals(pw)) {
+			map.remove(id);
+			result = true;
+		}
+		return result;
+	}
 }
 
 

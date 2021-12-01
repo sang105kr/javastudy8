@@ -42,7 +42,6 @@
     <fullyQualifiedTypeName name="com.kh.exam3.ExceptionExample"/>
     <fullyQualifiedTypeName name="com.kh.exam6.OverAgeException"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Objects"/>
@@ -54,8 +53,11 @@
     <fullyQualifiedTypeName name="sec01.verify.exam02.MovieThread"/>
     <fullyQualifiedTypeName name="sec01.verify.exam02.MusicRunnable"/>
     <fullyQualifiedTypeName name="sec02.verify.exam03.MovieThread"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="com.words.DicCommonIf"/>
+    <fullyQualifiedTypeName name="com.words.DicCustomerIf"/>
+    <fullyQualifiedTypeName name="com.words.Menu"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
 </qualifiedTypeNameHistroy>
