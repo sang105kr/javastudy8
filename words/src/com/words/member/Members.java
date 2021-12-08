@@ -1,4 +1,4 @@
-package com.words;
+package com.words.member;
 
 import java.util.HashMap;
 import java.util.Map;

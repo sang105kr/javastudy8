@@ -1,9 +1,9 @@
-package com.words;
+package com.words.dic;
 
 import java.util.Map;
 
 public interface DicAdminIf extends DicCommonIf {
-
+	
 	//µî·Ï
 	void put(String word, String meaning);
 

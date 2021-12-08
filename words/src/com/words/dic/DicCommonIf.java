@@ -1,4 +1,4 @@
-package com.words;
+package com.words.dic;
 
 import java.util.Set;
 
