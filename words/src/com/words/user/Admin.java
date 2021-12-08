@@ -1,16 +1,27 @@
 package com.words.user;
 
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 import com.words.dic.DicAdminIf;
+import com.words.member.MembersIf;
 
 public class Admin extends User {
 
 	private DicAdminIf dictionary;
+	private MembersIf members;
 	
-	public Admin(DicAdminIf dictionary) {
+	public Admin(DicAdminIf dictionary, MembersIf members) {
 		this.dictionary = dictionary;
+		this.members = members;
+	}
+	
+	//회원현황
+	public void getMembers() {
+		for(Entry<String,String> entry : members.getMembers()) {
+			System.out.println(entry.getKey()+"-"+entry.getValue());
+		}
 	}
 	
 	//등록

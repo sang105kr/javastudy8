@@ -2,8 +2,10 @@ package com.words.member;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
-public class Members {
+public class Members implements MembersIf{
 
 	private Map<String,String> map = new HashMap<>();
 	private final String ADMIN_ID = "admin";
@@ -19,6 +21,7 @@ public class Members {
 	 * @param id 회원 아이디
 	 * @param pw 회원 비밀번호
 	 */
+	@Override
 	public void joinMember(String id, String pw) {
 		//아이디 중복체크
 		if(map.containsKey(id)) {
@@ -33,6 +36,7 @@ public class Members {
 	 * @param pw 비밀번호
 	 * @return 회원인증(인증실패,관리자,일반회원)
 	 */
+	@Override
 	public LoginChk isMember(String id, String pw) {
 		LoginChk loginChk = null;
 		
@@ -60,6 +64,7 @@ public class Members {
 	 * @param pw 비밀번호
 	 * @return 탈퇴성공유무
 	 */
+	@Override
 	public boolean outMember(String id, String pw) {
 		boolean result = false;
 		//회원존재하면
@@ -68,6 +73,17 @@ public class Members {
 			result = true;
 		}
 		return result;
+	}
+	
+	/**
+	 * 회원현황
+	 */
+	@Override
+	public Set<Entry<String, String>> getMembers() {
+		Map<String,String> map = new HashMap<>();
+		map.putAll(this.map);
+		map.remove(ADMIN_ID);
+		return map.entrySet();
 	}
 }
 
