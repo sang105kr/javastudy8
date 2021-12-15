@@ -1,11 +1,12 @@
 package com.kh.banking;
 
-public class Bank implements BankIf{
-
+public class Bank implements BanktIf {
+	
 	// 개설 가능한 계좌수 한도
 	public static final int OPEN_ACCOUNT_LIMIT = 5;
 	public static final Account[] accounts = new Account[OPEN_ACCOUNT_LIMIT];
 
+	public static final int ACCOUNT_NUM_SIZE = 3; // 계좌번호 3자리
 	public static final int ONE_TIME_MONEY_LIMIT = 20_000; // 1회 입금한도
 	public static final int DEPOSIT_MONEY_LIMIT = 50_000; // 예치금 한도
 
@@ -18,36 +19,33 @@ public class Bank implements BankIf{
 		super();
 	}
 
-	public Bank(String accountName) {
-		// 개설 가능한 계좌수 체크
-		if (cnt == OPEN_ACCOUNT_LIMIT) {
-			throw new IllegalStateException("개설 가능 계좌수 초과!");
-		}
-
-		// 동명이인 체크
-		if (existAccountName(accountName)) {
-			throw new IllegalArgumentException("동명이인이 존재합니다!");
-		}
-
-		this.accountName = accountName;
-
-		// 계좌번호 생성
-		this.accountNumber = createAccountNumber(++accountNum);
-		accounts[cnt++] = this;
-	}
-
 	// 계좌 생성
 	@Override
-	public Account createNewAccount(String name) {
+	public Account createNewAccount(String accountName) {
 
+		Account account = null;
+		
 		for (int i = 0; i < accounts.length; i++) {
+			
+			// 개설 가능한 계좌수 체크
+			if (cnt == OPEN_ACCOUNT_LIMIT) {
+				throw new IllegalStateException("개설 가능 계좌수 초과!");
+			}
+
+			// 동명이인 체크
+			if (existAccountName(accountName)) {
+				throw new IllegalArgumentException("동명이인이 존재합니다!");
+			}
+			
 			if (accounts[i] == null) {
-				accounts[i] = new Account(name);
-				return accounts[i];
+				accounts[i] = new Account(accountName);
+				account = accounts[i];
+				cnt++;
+				break;
 			}
 		}
 
-		return null;
+		return account;
 	}
 
 	// 계좌 폐지
@@ -68,6 +66,7 @@ public class Bank implements BankIf{
 		// 2)계좌 폐지
 		Account delAccount = accounts[findedIndex];
 		accounts[findedIndex] = null;
+		cnt--;
 		
 		return delAccount;
 	}
@@ -81,16 +80,8 @@ public class Bank implements BankIf{
 		if (findedIndex == NOT_FOUND) {
 			throw new IllegalArgumentException("계좌번호를 찾을 수 없습니다");
 		}
-		// 1) 1회 2만원 미만
-		if (money < 0 || money >= ONE_TIME_MONEY_LIMIT) {
-			throw new IllegalArgumentException("1 회 2만원 입금한도 초과!!");
-		}
-		// 2) 예치금이 5만원 이하
-		if (accounts[findedIndex].getBalance() + money > DEPOSIT_MONEY_LIMIT) {
-			throw new IllegalArgumentException("예치금 5만원 한도 초과!!");
-		}
-		// 3) 입금
-		accounts[findedIndex].balance += money;
+		// 2) 입금
+		accounts[findedIndex].deposit(accountNumber, money);
 	}
 
 	// 출금
@@ -101,16 +92,8 @@ public class Bank implements BankIf{
 		if (findedIndex == NOT_FOUND) {
 			throw new IllegalArgumentException("계좌번호를 찾을 수 없습니다");
 		}
-		// 1) 음수 체크
-		if (money < 0) {
-			throw new IllegalArgumentException("음수가 입력되었습니다!");
-		}
-		// 2) 잔액 < 출금액 체크
-		if (accounts[findedIndex].getBalance() < money) {
-			throw new IllegalArgumentException("잔액이 모지랍니다! 차액 : " + (accounts[findedIndex].getBalance() - money));
-		}
 		// 3)출금
-		accounts[findedIndex].balance -= money;
+		accounts[findedIndex].withdraw(accountNumber, money);
 	}
 
 	// 조회
@@ -135,31 +118,15 @@ public class Bank implements BankIf{
 			}
 		}
 
+		System.out.println("개설 계좌수 : " + cnt);
 		System.out.println("유휴 계좌수 : " + idleAccount);
-	}
-
-	public String getAccountName() {
-		return accountName;
-	}
-
-	public String getAccountNumber() {
-		return accountNumber;
-	}
-
-	public int getBalance() {
-		return balance;
-	}
-
-	@Override
-	public String toString() {
-		return "예금주명 : " + accountName + ", 계좌번호: " + accountNumber + ", 잔액 : " + balance;
 	}
 
 	// 동명이인 체크
 	private boolean existAccountName(String accountName) {
 		boolean existAccountName = false;
-		for (int i = 0; i < cnt; i++) {
-			if (accounts[i].accountName.equals(accountName)) {
+		for (int i = 0; i < accounts.length; i++) {
+			if (accounts[i] != null && accounts[i].getAccountName().equals(accountName)) {
 				existAccountName = true;
 				break;
 			}
@@ -190,4 +157,5 @@ public class Bank implements BankIf{
 		}
 		return NOT_FOUND;
 	}
+
 }

@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class AccountMain {
 
 	public static void main(String[] args) {
-		BankIf account = new Account();
+		BanktIf bank = new Bank();
 		
 		boolean stop = false;
 		Scanner scanner = new Scanner(System.in);
 		
 		while (!stop) {
 			Account ac = null;  	        //계좌
-			String name = null;						//예금주명
+			String accountName = null;						//예금주명
 			String accountNumber = null;	//계좌번호
 			int money = 0;								//입출금액
 			
@@ -27,8 +27,8 @@ public class AccountMain {
 				case "1": // 계좌 개설
 					System.out.println("이름을 입력하세요");
 					System.out.print("입력 > ");
-					name = scanner.next();
-					ac = account.createNewAccount(name);
+					accountName = scanner.next();
+					ac = bank.createNewAccount(accountName);
 					if (ac != null) {
 						System.out.println("계좌가 생성 되었습니다.");
 						System.out.println(ac.toString());
@@ -38,7 +38,7 @@ public class AccountMain {
 					System.out.println("폐지할 계좌 번호를 입력하세요");
 					System.out.print("입력 > ");
 					accountNumber = scanner.next();
-					ac = account.deleteAccount(accountNumber);
+					ac = bank.deleteAccount(accountNumber);
 					if (ac != null) {
 						System.out.println("계좌가 폐지 되었습니다.");
 						System.out.println(ac.toString());
@@ -51,7 +51,7 @@ public class AccountMain {
 					System.out.println("송금할 금액을 입력하세요");
 					System.out.print("입력 > ");
 					money = Integer.parseInt(scanner.next());
-					account.deposit(accountNumber, money);
+					bank.deposit(accountNumber, money);
 					break;
 				case "4": // 출금
 					System.out.println("출금할 계좌 번호를 입력하세요");
@@ -60,16 +60,16 @@ public class AccountMain {
 					System.out.println("출금할 금액을 입력하세요");
 					System.out.print("입력 > ");
 					money = Integer.parseInt(scanner.next());
-					account.withdraw(accountNumber, money);
+					bank.withdraw(accountNumber, money);
 					break;
 				case "5": // 계좌 개별 조회
 					System.out.println("조회할 계좌 번호를 입력하세요");
 					System.out.print("입력 > ");
 					accountNumber = scanner.next();
-					account.printAccount(accountNumber);
+					bank.printAccount(accountNumber);
 					break;
 				case "6": // 계좌 전체 조회
-					account.printAllAccount();
+					bank.printAllAccount();
 					break;
 				case "0": // 종료
 					System.out.println("종료되었습니다.");
