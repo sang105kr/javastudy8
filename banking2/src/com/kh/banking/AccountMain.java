@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class AccountMain {
 
 	public static void main(String[] args) {
-		AccountIf account = new Account();
+		BankIf account = new Account();
 		
 		boolean stop = false;
 		Scanner scanner = new Scanner(System.in);
 		
 		while (!stop) {
 			Account ac = null;  	        //계좌
-			String accountName = null;						//예금주명
+			String name = null;						//예금주명
 			String accountNumber = null;	//계좌번호
 			int money = 0;								//입출금액
 			
@@ -27,8 +27,8 @@ public class AccountMain {
 				case "1": // 계좌 개설
 					System.out.println("이름을 입력하세요");
 					System.out.print("입력 > ");
-					accountName = scanner.next();
-					ac = account.createNewAccount(accountName);
+					name = scanner.next();
+					ac = account.createNewAccount(name);
 					if (ac != null) {
 						System.out.println("계좌가 생성 되었습니다.");
 						System.out.println(ac.toString());

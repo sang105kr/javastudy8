@@ -2,20 +2,20 @@ package com.kh.banking;
 
 public interface AccountIf {
 	//신규
-	public Account createNewAccount(String name);
+	Account createNewAccount(String accountName);
 
 	// 폐지
-	public Account deleteAccount(String accountNumber);
+	Account deleteAccount(String accountNumber);
 
 	// 입금
-	public void deposit(String accountNumber, int money);
+	void deposit(String accountNumber, int money);
 
 	// 출금
-	public void withdraw(String accountNumber, int money);
+	void withdraw(String accountNumber, int money);
 
-	// 조회
-	public void printAccount(String accountNumber);
+	// 개별 조회
+	void printAccount(String accountNumber);
 
 	// 전체 조회
-	public void printAllAccount();
+	void printAllAccount();
 }

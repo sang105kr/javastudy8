@@ -1,16 +1,11 @@
 package com.kh.banking;
 
-public class Account implements AccountIf {
-
-	private String accountName; // 예금주명
-	private String accountNumber; // 계좌번호
-	private int balance; // 잔액
+public class Bank implements BankIf{
 
 	// 개설 가능한 계좌수 한도
 	public static final int OPEN_ACCOUNT_LIMIT = 5;
 	public static final Account[] accounts = new Account[OPEN_ACCOUNT_LIMIT];
 
-	public static final int ACCOUNT_NUM_SIZE = 3; // 계좌번호 3자리
 	public static final int ONE_TIME_MONEY_LIMIT = 20_000; // 1회 입금한도
 	public static final int DEPOSIT_MONEY_LIMIT = 50_000; // 예치금 한도
 
@@ -19,46 +14,40 @@ public class Account implements AccountIf {
 	private static int cnt; // 개설된 계좌갯수 카운트
 	private static int accountNum; // 계좌번호 카운트
 
-	public Account() {
+	public Bank() {
 		super();
 	}
 
-	private Account(String accountName) {
+	public Bank(String accountName) {
+		// 개설 가능한 계좌수 체크
+		if (cnt == OPEN_ACCOUNT_LIMIT) {
+			throw new IllegalStateException("개설 가능 계좌수 초과!");
+		}
+
+		// 동명이인 체크
+		if (existAccountName(accountName)) {
+			throw new IllegalArgumentException("동명이인이 존재합니다!");
+		}
 
 		this.accountName = accountName;
 
 		// 계좌번호 생성
 		this.accountNumber = createAccountNumber(++accountNum);
-		accounts[cnt] = this;
+		accounts[cnt++] = this;
 	}
 
 	// 계좌 생성
 	@Override
-	public Account createNewAccount(String accountName) {
+	public Account createNewAccount(String name) {
 
-		Account account = null;
-		
 		for (int i = 0; i < accounts.length; i++) {
-			
-			// 개설 가능한 계좌수 체크
-			if (cnt == OPEN_ACCOUNT_LIMIT) {
-				throw new IllegalStateException("개설 가능 계좌수 초과!");
-			}
-
-			// 동명이인 체크
-			if (existAccountName(accountName)) {
-				throw new IllegalArgumentException("동명이인이 존재합니다!");
-			}
-			
 			if (accounts[i] == null) {
-				accounts[i] = new Account(accountName);
-				account = accounts[i];
-				cnt++;
-				break;
+				accounts[i] = new Account(name);
+				return accounts[i];
 			}
 		}
 
-		return account;
+		return null;
 	}
 
 	// 계좌 폐지
@@ -79,7 +68,6 @@ public class Account implements AccountIf {
 		// 2)계좌 폐지
 		Account delAccount = accounts[findedIndex];
 		accounts[findedIndex] = null;
-		cnt--;
 		
 		return delAccount;
 	}
@@ -147,7 +135,6 @@ public class Account implements AccountIf {
 			}
 		}
 
-		System.out.println("개설 계좌수 : " + cnt);
 		System.out.println("유휴 계좌수 : " + idleAccount);
 	}
 
@@ -171,8 +158,8 @@ public class Account implements AccountIf {
 	// 동명이인 체크
 	private boolean existAccountName(String accountName) {
 		boolean existAccountName = false;
-		for (int i = 0; i < accounts.length; i++) {
-			if (accounts[i] != null && accounts[i].accountName.equals(accountName)) {
+		for (int i = 0; i < cnt; i++) {
+			if (accounts[i].accountName.equals(accountName)) {
 				existAccountName = true;
 				break;
 			}
@@ -203,5 +190,4 @@ public class Account implements AccountIf {
 		}
 		return NOT_FOUND;
 	}
-
 }
