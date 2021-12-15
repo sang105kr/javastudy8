@@ -87,11 +87,11 @@ public class Account implements AccountIf {
 			throw new IllegalArgumentException("계좌번호를 찾을 수 없습니다");
 		}
 		// 1) 1회 2만원 미만
-		if (money < 0 || money >= 20_000) {
+		if (money < 0 || money >= ONE_TIME_MONEY_LIMIT) {
 			throw new IllegalArgumentException("1 회 2만원 입금한도 초과!!");
 		}
 		// 2) 예치금이 5만원 이하
-		if (accounts[findedIndex].getBalance() + money > 50_000) {
+		if (accounts[findedIndex].getBalance() + money > DEPOSIT_MONEY_LIMIT) {
 			throw new IllegalArgumentException("예치금 5만원 한도 초과!!");
 		}
 		// 3) 입금
