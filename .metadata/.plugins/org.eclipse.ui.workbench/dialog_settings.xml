@@ -21,6 +21,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\javaedu8\download\소스_프로그래밍 언어활용_홍길동.zip"/>
 			<item value="D:\javaedu8\download\words.zip"/>
 			<item value="D:\javaedu8\download\all.zip"/>
 			<item value="D:\javaedu8\download\test.zip"/>
